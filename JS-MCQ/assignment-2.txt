@@ -1,0 +1,92 @@
+1) What is npm?
+ans. npm is world's largest software library (registry) for javascript software packages.
+     npm is also a software package manager and installer.
+
+=> It’s certainly possible to manage your project’s dependencies yourself. As your project grows, though, this can become a herculean task.
+=> This is where a package manager like npm comes in. npm solves this problem by handling dependency and package management for your project. 
+=> You define all your project’s dependencies inside your package.json file. Anytime you or a team member needs to get started with your project, all they have to do is run npm install.
+=> This will immediately install all the necessary dependencies for your project. In the package.json file, you can also specify which versions your project depends upon. This is useful to prevent updates from these packages from breaking your project.
+
+2) What is "Parcel/webpack"? Why do we need it.
+ans. Parcel and webpack are budlers used mostly javascript and typescript
+     code that helps you to minify, clean and  make your code compact so it became eaiser
+    to send a request or recieve a response from server when it usually takes you to 
+    transfer multiple files without using any budlers for loading the page of your application.
+
+    Both of these budlers reduce the time it takes for the transfer of data and files to the server from the application.
+
+    They removes the unnecessary comments, new lines, any kind of block delimiters, and white spaces while the functionality of the code remains unchanged. 
+
+3) What is "_parcel.cache"?
+ans. The .cache folder  stores information about your project when parcel builds it, so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch. It's a key reason why parcel can be so fast in development mode.
+
+
+4) What is npx?
+ans. It is simply an NPM package runner. It allows developers to execute any Javascript Package available on the NPM registry without even installing it. 
+
+
+5) What is diffrence between "dependencies" vs "devDependencies"?
+
+ans. "dependencies": Packages required by your application in production.
+      "devDependencies": Packages that are only needed for local development and testing.
+
+
+6) What is tree shaking?
+ans. Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.
+
+we use module bundlers (e.g., webpack or parcel) to automatically remove dead code when bundling multiple JavaScript files into single files. This is important for preparing code that is production ready, for example with clean structures and minimal file size.
+
+
+7) What is Hot Module Replacement?
+ans. HMR allows you to exchange, add, or remove JavaScript modules while the application is running, all without having to reload the browser
+
+
+8) List down your favourite 5 superpowers of Parcel and describe any 3 of them in your worlds.
+ans.
+a) Tree shaking
+b) Minification
+c) Hot module Replacement - if you made changes to your application which is running, HMR will make this changes to your app without reloading the webpage.
+d) Image optimization - Parcel supports resizing, converting, and optimizing images. You can use query parameters when referencing an image in HTML, CSS, or JavaScript to specify which format and size the image should be converted to.
+e) web server
+f) Auto install :- When you use package or plug-in that is not included by default, parcel will automatically install that package or plug-in for you. When this will happen you will see message in the terminal. 
+
+
+9) what is .gitignore? what should we add and not add into it?
+ans. The . gitignore file tells Git which files to ignore when committing your project to the GitHub repository. gitignore is located in the root directory of your repo. / will ignore directories with the name.
+
+we ignore below files and add to the gitignore :-
+
+Operating system files
+Application files
+Language and framework files
+Files downloaded with package managers
+Credentials
+
+which files we are not adding to .gitignore :-  our core code files, our stylesheets and important files, data files etc.
+
+
+10)what is difference between package.json and package-lock.json?
+ans. The “package.json” file defines the rules required to run your application and install dependencies. On the other hand, the “package-lock.json” file holds detailed information on all the dependencies installed based on the package.json rules.
+
+package-lock.json: records the exact version of each installed package which allows you to re-install them. Future installs will be able to build an identical dependency tree.
+package.json: records the minimum version you app needs. If you update the versions of a particular package, the change is not going to be reflected here.
+
+
+11) why I should not modify package-lock.json?
+ans. It is a generated file and is not designed to be manually edited. Its purpose is to track the entire tree of dependencies (including dependencies of dependencies) and the exact version of each dependency
+
+
+12)what is node_modules? is it a good idea to put that on git?
+ans. The node_modules folder contains every installed dependency for your project. In most cases, you should not commit this folder into your version controlled repository. As you install more dependencies, the size of this folder will quickly grow.
+
+The node_modules folder has a massive size (up to Gigabytes). It is easy to recreate the node_modules folder via packages. json. It is unnecessary to commit code that you didn't write .
+
+
+13) What is dist folder?
+ans. The dist folder is where the compiled code is stored. This is the code that is ready to be deployed to a production environment.
+The purpose of the src and dist folders is to keep the source code and the compiled code separate. This helps to ensure that the code is kept organized and that the compiled version is always up-to-date. It also makes it easier to debug and maintain the code. The src folder is where developers write their code, while the dist folder is where the compiled code is stored.
+
+
+14) what is browserslist?
+ans. Browserslist is a tool that allows specifying which browsers should be supported in your frontend app by specifying "queries" in a config file. It's used by frameworks/libraries such as React, Angular and Vue, but it's not limited to them.
+

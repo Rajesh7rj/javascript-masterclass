@@ -1,0 +1,103 @@
+===> Introduction and history
+
+ Javascript is a scripting language introduced to make web pages alive and interactive 
+ with the user. The interaction is possible due to the programs or scripts written along
+ with HTML. Javascript was introduced by Brendan Eich, a Netscape employee. 
+ 
+ Javascript at its development phase was called Mocha and was first shipped with 
+ Netscape Navigator 2.0 as LiveScript. Finally, when Netscape Navigator 2.0 Beta 3
+ was released, it was given the name Javascript. Javascript has come a long way 
+ ie from client-side programming/frameworks (like Angular/React) to a server-side 
+ technology like NodeJS in 2009.
+
+
+===> What is ES?
+
+In the year 1996, a standards organization called ECMA (European Computer Manufacturers Association) 
+International carved out standard specifications called ECMAScript (ES), which all browser vendors 
+could implement. And Javascript is the most well-known implementation of ES, while ActionScript 
+(from Macromedia/Adobe Systems) and JScript (from Microsoft) are other implementations of ES.
+
+
+
+====> List of Versions from ES
+
+To date, ES has published nine versions, and the latest one (9th version) was published in the year 2018.
+
+ES1 1997
+ES2 1998
+ES3 1999
+ES4 Abandoned
+ES5 2009
+ES6 2015
+ES7 2016
+ES8 2017
+ES9 2018
+
+ECMA Script's first three versions- ES1, ES2, and ES3 were yearly updates, whereas ES4 was never released due 
+to political disagreements. After a decade, ES5 was eventually released with several additions
+
+
+*** ES5 ***
+
+1. ‘USE STRICT’ DIRECTIVE: 
+2. NEW METHODS IN AN ARRAY :- isArray(),forEach(),map(),filter(),reduce(),reduceRight(),every(),some(),indexOf(),lastIndexOf()
+3. JSON SUPPORT :- parse(), stringify()
+4. NEW METHODS IN A DATE :- now(), valueOf()
+5. GETTERS AND SETTERS:- The get method returns the value of a variable, and the set method sets the value of the variable.
+6. PROPERTY METHODS :- Object.defineProperty()
+
+
+
+*** ES6 ***
+
+1. LET & CONST:
+2. FOR..OF:
+3. DEFAULT PARAMETERS:
+4. REST OPERATOR:
+5. SPREAD OPERATOR:
+6. DESTRUCTURING:
+7. TEMPLATE LITERALS/STRINGS:
+8. ARROW FUNCTIONS:
+9. PROMISES:
+10. CLASSES:
+==> Other features in ES6 include:
+Set, WeakSet, Map, WeakMap
+Generators
+Symbols
+Unicode
+Modules
+Proxies
+Built-Ins
+Binary and Octal
+Reflect
+Tail Call Optimization
+
+
+
+*** ES7 ***
+
+1. EXPONENTIATION OPERATOR (**):
+2. INCLUDES(): 
+
+
+
+*** ES8 ***
+
+1. PADSTART():
+2. PADEND():
+3. SYNC/AWAIT:
+4. OBJECT.ENTRIES():
+5. TRAILING COMMAS:
+6. SHARED MEMORY AND ATOMICS:
+7. OBJECT.GETOWNPROPERTYDESCRIPTORS():
+8. OBJECT.VALUES():
+ 
+
+
+*** ES9 ***
+
+1. ASYNCHRONOUS ITERATION:
+2. REGULAR EXPRESSION IMPROVEMENTS:
+3. REST/SPREAD PROPERTIES:
+4. PROMISE.PROTOTYPE.FINALLY():
